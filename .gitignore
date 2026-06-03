@@ -8,6 +8,8 @@ postgres_data/
 redis_data/
 
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .coverage
 htmlcov/
 
