@@ -3,6 +3,11 @@ services:
     build: .
     ports:
       - "8000:8000"
+    environment:
+      DATABASE_URL:
+        postgresql+psycopg://task_tracker:task_tracker@postgres:5432/task_tracker
+    depends_on:
+      - postgres
 
   postgres:
     image: postgres:16

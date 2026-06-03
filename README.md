@@ -76,6 +76,26 @@ The containerized API is exposed at:
 http://localhost:8000
 ```
 
+## Database Migrations
+
+Start the PostgreSQL service:
+
+```bash
+docker compose up -d postgres
+```
+
+Check the current Alembic revision:
+
+```bash
+alembic current
+```
+
+Apply all pending migrations:
+
+```bash
+alembic upgrade head
+```
+
 ## API Reference
 
 Swagger UI:
